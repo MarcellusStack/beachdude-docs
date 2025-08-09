@@ -1,0 +1,156 @@
+---
+import "../styles/global.css";
+import logo from "../assets/logo.png";
+import headerLogo from "../assets/header-logo.png";
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BeachDude – Offline-KI-Assistent für Rettungsschwimmer</title>
+    <meta
+      name="description"
+      content="BeachDude ist dein Offline-KI-Assistent für Rettungsschwimmer am Strand. Schneller Zugriff auf Einsatzwissen, Checklisten und Übersetzungen – ohne Internet."
+    />
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body class="min-h-dvh bg-white text-gray-900">
+    <header class="sticky top-0 z-40 w-full border-b border-gray-200/70 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+      <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <img src={logo} alt="BeachDude Logo" class="h-8 w-auto" />
+          <span class="font-semibold tracking-tight text-[#002d55]">BeachDude</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a class="text-gray-700 hover:text-[#002d55]" href="/docs/">Dokumentation</a>
+          <a class="text-gray-700 hover:text-[#002d55]" href="/guides/example/">Guides</a>
+          <a class="text-gray-700 hover:text-[#002d55]" href="/reference/example/">Referenz</a>
+          <a class="inline-flex items-center rounded-md bg-[#002d55] px-3 py-2 text-white hover:bg-[#002244]" href="/docs/">Kostenlos starten</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden">
+        <div class="mx-auto max-w-7xl px-4 py-16 md:py-24">
+          <div class="grid items-center gap-10 md:grid-cols-2">
+            <div class="space-y-6">
+              <span class="inline-block rounded-full bg-[#f5f0e6] px-3 py-1 text-xs font-medium text-[#002d55]">Offline • Schnell • Verlässlich</span>
+              <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-[#002d55]">Dein Offline-KI-Assistent für Rettungsschwimmer am Strand</h1>
+              <p class="text-lg leading-relaxed text-gray-700">BeachDude liefert einsatzrelevantes Wissen, Übersetzungen und Checklisten direkt vor Ort – auch ohne Internet. Entwickelt für Rettungsschwimmer, um schneller und sicherer zu handeln.</p>
+              <div class="flex flex-wrap gap-3">
+                <a href="/docs/" class="inline-flex items-center rounded-md bg-[#002d55] px-5 py-3 text-white hover:bg-[#002244]">Kostenlos starten</a>
+                <a href="/docs/" class="inline-flex items-center rounded-md border border-[#002d55] px-5 py-3 text-[#002d55] hover:bg-[#f5f0e6]">Mehr erfahren</a>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+                <img src={headerLogo} alt="BeachDude Vorschau" class="mx-auto h-56 w-auto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-gray-200/70 bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-14 md:py-20">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-[#002d55]">Weniger suchen. Schneller handeln.</h2>
+            <p class="mt-4 text-gray-700">Optimiert für den Einsatz am Strand: klare Workflows, offline verfügbar und auf das Wesentliche reduziert.</p>
+          </div>
+
+          <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+              <h3 class="font-semibold text-[#002d55]">Offline-Wissen</h3>
+              <p class="mt-2 text-sm text-gray-700">Einsatzprotokolle, SOPs und Checklisten sind offline verfügbar – genau dann, wenn du sie brauchst.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+              <h3 class="font-semibold text-[#002d55]">Schnelle Übersetzungen</h3>
+              <p class="mt-2 text-sm text-gray-700">Kommunikation mit internationalen Gästen ohne Verzögerung – direkt am Wasser.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+              <h3 class="font-semibold text-[#002d55]">Checklisten & Protokolle</h3>
+              <p class="mt-2 text-sm text-gray-700">Von der Prävention bis zur Rettung – strukturierte Abläufe erhöhen die Sicherheit.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+              <h3 class="font-semibold text-[#002d55]">Geräte- und Funknotizen</h3>
+              <p class="mt-2 text-sm text-gray-700">Wichtige Infos für Ausrüstung und Funkkanäle immer griffbereit.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+              <h3 class="font-semibold text-[#002d55]">Schulung & Onboarding</h3>
+              <p class="mt-2 text-sm text-gray-700">Neue Teammitglieder schneller einsatzbereit – mit klaren Leitfäden.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+              <h3 class="font-semibold text-[#002d55]">Privatsphäre</h3>
+              <p class="mt-2 text-sm text-gray-700">Lokale Verarbeitung – sensible Daten bleiben dort, wo sie entstehen.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-gray-200/70 bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-14 md:py-20">
+          <div class="grid items-center gap-10 md:grid-cols-2">
+            <div class="space-y-4">
+              <h2 class="text-2xl md:text-3xl font-bold text-[#002d55]">Für den Alltag an der Küste gemacht</h2>
+              <p class="text-gray-700">Ob schnelle Abklärung, Übersetzung vor Ort oder strukturierte Dokumentation – BeachDude unterstützt Rettungsschwimmer bei allen Aufgaben.</p>
+              <ul class="mt-2 grid gap-2 text-sm text-gray-700">
+                <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-[#002d55]"></span><span>Sofort einsatzbereit, auch ohne Netz</span></li>
+                <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-[#002d55]"></span><span>Eindeutige, klare Oberflächen</span></li>
+                <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-[#002d55]"></span><span>Fokus auf Sicherheit und Zeitgewinn</span></li>
+              </ul>
+              <div class="pt-4">
+                <a href="/docs/" class="inline-flex items-center rounded-md bg-[#002d55] px-5 py-3 text-white hover:bg-[#002244]">Jetzt loslegen</a>
+              </div>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+                <p class="text-3xl font-bold text-[#002d55]">2×</p>
+                <p class="mt-2 text-sm text-gray-700">schnellere Informationssuche im Einsatz</p>
+              </div>
+              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+                <p class="text-3xl font-bold text-[#002d55]">100%</p>
+                <p class="mt-2 text-sm text-gray-700">offline nutzbar</p>
+              </div>
+              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+                <p class="text-3xl font-bold text-[#002d55]">+Sicherheit</p>
+                <p class="mt-2 text-sm text-gray-700">durch standardisierte Checklisten</p>
+              </div>
+              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+                <p class="text-3xl font-bold text-[#002d55]">0</p>
+                <p class="mt-2 text-sm text-gray-700">Cloud-Zwang, Daten bleiben lokal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-gray-200/70 bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-14 md:py-20">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-[#002d55]">Bereit, loszulegen?</h2>
+            <p class="mt-4 text-gray-700">Hol dir BeachDude und bring Klarheit und Tempo in deinen Einsatzalltag.</p>
+            <div class="mt-6">
+              <a href="/docs/" class="inline-flex items-center rounded-md bg-[#002d55] px-6 py-3 text-white hover:bg-[#002244]">Kostenlos starten</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-10 text-sm text-gray-600">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} BeachDude. Alle Rechte vorbehalten.</p>
+          <nav class="flex gap-4">
+            <a class="hover:text-[#002d55]" href="/docs/">Docs</a>
+            <a class="hover:text-[#002d55]" href="#">Impressum</a>
+            <a class="hover:text-[#002d55]" href="#">Datenschutz</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+  
+</html>
