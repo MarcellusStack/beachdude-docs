@@ -1,12 +1,25 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-
+import cloudflare from "@astrojs/cloudflare";
 import tailwindcss from "@tailwindcss/vite";
+import clerk from "@clerk/astro";
+import { deDE } from "@clerk/localizations";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
+    clerk({
+      localization: deDE,
+      appearance: {
+        elements: {
+          button: {
+            backgroundColor: "#002d55",
+            color: "#fff",
+          },
+        },
+      },
+    }),
     starlight({
       title: "BeachDude",
       customCss: [
@@ -37,4 +50,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  adapter: cloudflare({ imageService: "compile" }),
+  output: "server",
 });
