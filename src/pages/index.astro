@@ -1,0 +1,216 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import headerLogo from "../assets/header-logo.png";
+export const prerender = true
+import { Image } from "astro:assets";
+---
+
+<BaseLayout
+  title="BeachDude – Offline-KI-Assistent für Rettungsschwimmer"
+  description="BeachDude ist dein Offline-KI-Assistent für Rettungsschwimmer am Strand. Schneller Zugriff auf Einsatzwissen, Checklisten und Übersetzungen – ohne Internet."
+>
+      <section class="relative overflow-hidden">
+        <div class="mx-auto max-w-7xl px-4 py-16 md:py-24">
+          <div class="grid items-center gap-10 md:grid-cols-2">
+            <div class="gap-4 flex flex-col items-start">
+              <span class="inline-block rounded-full bg-[#f5f0e6] px-3 py-1 text-xs font-medium text-[#002d55]">Offline-fähig • Schneller Einstieg • Datenschutz-konform</span>
+              <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-[#002d55]">Dein Offline-KI-Assistent für Rettungsschwimmer am Strand</h1>
+              <p class="text-lg leading-relaxed text-gray-700">BeachDude – die moderne und vollständige Softwarelösung für Strandwachen. Alle Funktionen an einem Ort. Komplett offline nutzbar.</p>
+              <div class="flex flex-wrap gap-3">
+                <a href="/waitlist" class="inline-flex items-center rounded-md bg-[#002d55] px-5 py-3 text-white hover:bg-[#002244]">Kostenlos starten</a>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+                 <Image src={headerLogo} alt="BeachDude Vorschau" width={224} height={224} loading="eager" decoding="async" class="mx-auto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-gray-200/70 bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-14 md:py-20">
+          <div class="mx-auto max-w-3xl text-center flex flex-col items-center gap-4">
+            <span class="inline-block rounded-full bg-[#f5f0e6] px-3 py-1 text-xs font-medium text-[#002d55]">Funktionen</span>
+            <h2 class="text-4xl md:text-5xl font-bold text-[#002d55]">Lösungen für alle Bereiche am Strand</h2>
+            <p class="mt-4 text-gray-700">Optimiert für den Einsatz am Strand: klare Workflows, offline verfügbar und auf das Wesentliche reduziert. Solltest du jedoch etwas vermissen, kontaktiere uns. Wir helfen dir gerne weiter.</p>
+          </div>
+
+          <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-access-point-off text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Offline-fähig</h3>
+              <p class="mt-2 text-sm text-gray-700">Alle Funktionen sind offline verfügbar – genau dann, wenn du sie brauchst.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-layout-dashboard text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Dashboard</h3>
+              <p class="mt-2 text-sm text-gray-700">Übersicht aller Einsätze, Türme, Fahrzeuge und Booten sowie Rettungsschwimmer.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-list-details text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Aufgabenmanagement</h3>
+              <p class="mt-2 text-sm text-gray-700">Erstellen von Aufgaben für Rettungsschwimmer.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-wind text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Wetterdaten</h3>
+              <p class="mt-2 text-sm text-gray-700">Erstellen von Wetterdaten.</p>
+            </div>
+             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-network text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Echtzeit jederzeit</h3>
+              <p class="mt-2 text-sm text-gray-700">Alle Funktionen aktualisieren sich in Echtzeit – ohne Wartezeiten somit können sie jeden Einsatz überprüfen sowie schauen welche Türme im Einsatz sind.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-users-group text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Benutzermanagement</h3>
+              <p class="mt-2 text-sm text-gray-700">Erstellen von Rettungsschwimmern sowie deren Daten.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-certificate text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Zertifikate</h3>
+              <p class="mt-2 text-sm text-gray-700">Erstellen von Zertifikaten für Rettungsschwimmer.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-tower text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Erstellen von Türmen, Fahrzeugen oder Booten sowie eigene Einsatzarten</h3>
+              <p class="mt-2 text-sm text-gray-700">Einsatzarten können individuell angepasst werden mit Koordinaten versehen werden und Rettungsschwimmer zugeordnet werden.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-calendar-event text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Saisonplanung & Wachplanung</h3>
+              <p class="mt-2 text-sm text-gray-700">Planen Sie Ihre Saison und Wachplanung für jeden Tag ganz einfach und schnell.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-mail text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">E-Mails Versenden</h3>
+              <p class="mt-2 text-sm text-gray-700">E-Mails für die Kommunikation mit Rettungsschwimmern – z. B. für Saison-Einladungen – sowie nach Einsätzen zur Protokollierung an Patient:innen/Geholfene und vieles mehr.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-list-check text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Checklisten & Protokolle</h3>
+              <p class="mt-2 text-sm text-gray-700">Von Erste-Hilfe sowie Such- und Gruppenanmeldung alles vorbereitet und falls etwas fehlt ist es möglich eigene Protokolle zu erstellen. Einsatzprotokolle können auch in Echtzeit erstellt werden.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-packages text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Geräte- und Lagerverwaltung</h3>
+              <p class="mt-2 text-sm text-gray-700">Wichtige Infos für Ausrüstung und Lager immer griffbereit.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-school text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Schulung & Onboarding</h3>
+              <p class="mt-2 text-sm text-gray-700">Neue Teammitglieder schneller einsatzbereit – mit klaren Leitfäden und Onboarding.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-shield-lock text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="m-0 font-semibold text-[#002d55]">Datenschutz</h3>
+              <p class="m-0 text-sm text-gray-700">Lokale Verarbeitung - komplett ohne Cloud-Zwang, falls doch sind die Daten verschlüsselt.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-message-chatbot text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Künstliche Intelligenz</h3>
+              <p class="mt-2 text-sm text-gray-700">Wir nutzen KI, um euch die Arbeit zu erleichtern. Zum Beispiel bei der Saison- und Wachplanung sowie beim Verbessern von E-Mails und Einsatzprotokollen.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-file text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Abrechnung von Rettungsschwimmern</h3>
+              <p class="mt-2 text-sm text-gray-700">Abrechnung für Rettungsschwimmer per CSV Export oder PDF.</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-file-import text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Import und Export von Daten</h3>
+              <p class="mt-2 text-sm text-gray-700">Import und Export von Daten in CSV oder Excel z.B. von Rettungsschwimmern</p>
+            </div>
+            <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
+              <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
+                <i class="ti ti-map text-2xl text-[#002d55]"></i>
+              </div>
+              <h3 class="font-semibold text-[#002d55]">Karte</h3>
+              <p class="mt-2 text-sm text-gray-700">Karte mit allen Türmen, Fahrzeugen und Booten sowie Rettungsschwimmern.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-gray-200/70 bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-14 md:py-20">
+
+          
+          <div class="grid items-center gap-10 md:grid-cols-2">
+            <div class="gap-4 flex flex-col items-start">
+               <span class="inline-block rounded-full bg-[#f5f0e6] px-3 py-1 text-xs font-medium text-[#002d55]">Vorteile</span>
+              <h2 class="text-4xl md:text-5xl font-bold text-[#002d55]">Für den Alltag am Strand gemacht</h2>
+              <p class="text-gray-700">Weniger administrative Aufgaben, verbesserter Ablauf und mehr Zeit für die wesentlichen Sachen – BeachDude unterstützt Rettungsschwimmer bei allen Aufgaben.</p>
+             
+                <a href="/waitlist" class="inline-flex items-center rounded-md bg-[#002d55] px-5 py-3 text-white hover:bg-[#002244]">Jetzt loslegen</a>
+              
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+                <p class="text-3xl font-bold text-[#002d55]">Weniger administrative</p>
+                <p class="mt-2 text-sm text-gray-700">Aufgaben mehr Zeit für die wesentlichen Sachen</p>
+              </div>
+              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+                <p class="text-3xl font-bold text-[#002d55]">100%</p>
+                <p class=" text-sm text-gray-700">offline nutzbar jederzeit</p>
+              </div>
+              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+                <p class="text-3xl font-bold text-[#002d55]">Verbesserter Ablauf</p>
+                <p class="mt-2 text-sm text-gray-700">durch standardisierte Workflows</p>
+              </div>
+              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
+                <p class="text-3xl font-bold text-[#002d55]">0</p>
+                <p class="mt-2 text-sm text-gray-700">Cloud-Zwang, Daten bleiben lokal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-gray-200/70 bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-14 md:py-20">
+          <div class="mx-auto max-w-3xl text-center flex flex-col items-center gap-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#002d55]">Bereit, loszulegen?</h2>
+            <p class=" text-gray-700">Hol dir BeachDude und bring Klarheit und Tempo in deinen Einsatzalltag.</p>
+              <a href="/waitlist" class="inline-flex items-center rounded-md bg-[#002d55] px-6 py-3 text-white hover:bg-[#002244]">Kostenlos starten</a>
+          </div>
+        </div>
+      </section>
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {  Waitlist as WaitlistAstro } from '@clerk/astro/components'
+export const prerender = true
+---
+
+<BaseLayout title="BeachDude – Warteliste" description="Trage dich in die Warteliste ein und erfahre als Erstes, wenn BeachDude verfügbar ist.">
+  <section class="border-y border-gray-200/70 bg-white">
+    <div class="mx-auto max-w-2xl px-4 py-16 md:py-24 flex flex-col items-center gap-4">
+      <div class="text-center gap-4 flex flex-col items-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-[#002d55]">Warteliste</h1>
+        <p class="text-gray-700">Trage dich ein und erhalte frühzeitigen Zugang sowie Updates zum Projekt.</p>
+      </div>
+
+      <WaitlistAstro appearance={{
+        elements: {
+          headerSubtitle: {
+            display: 'none'
+          }
+          
+        }
+      }}  />
+
+      <p class="mt-6 text-center text-sm text-gray-600">Wir respektieren deine Privatsphäre. Kein Spam.</p>
+    </div>
+  </section>
+</BaseLayout>
+
