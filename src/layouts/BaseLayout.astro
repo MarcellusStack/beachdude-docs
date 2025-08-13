@@ -3,6 +3,7 @@
 import "../styles/global.css";
 import logo from "../assets/logo.png";
 import { Image } from "astro:assets";
+import PostHog from "../components/posthog.astro";
 
 interface Props {
   title?: string;
@@ -27,13 +28,14 @@ const { title = "BeachDude", description = "BeachDude – Offline-KI-Assistent" 
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta property="og:locale" content="de_DE" />
-    <link rel="alternate" hrefLang="de-DE" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="alternate" hreflang="de-DE" href={new URL(Astro.url.pathname, Astro.site)} />
     <link rel="icon" href="/favicon.svg" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     </noscript>
+    <PostHog />
   </head>
   <body class="min-h-dvh bg-white text-gray-900">
     <script type="application/ld+json">
