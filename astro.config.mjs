@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import sitemap from "@astrojs/sitemap";
 import cloudflare from "@astrojs/cloudflare";
 import tailwindcss from "@tailwindcss/vite";
 import clerk from "@clerk/astro";
@@ -8,6 +9,7 @@ import { deDE } from "@clerk/localizations";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://www.beachdude.de",
   integrations: [
     clerk({
       localization: deDE,
@@ -45,6 +47,7 @@ export default defineConfig({
         },
       ],
     }),
+    sitemap(),
   ],
 
   vite: {
