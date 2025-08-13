@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import headerLogo from "../assets/header-logo.png";
 export const prerender = true
+import { Image } from "astro:assets";
 ---
 
 <BaseLayout
@@ -21,7 +22,7 @@ export const prerender = true
             </div>
             <div class="relative">
               <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5">
-                 <img src={headerLogo.src} alt="BeachDude Vorschau" class="mx-auto h-56 w-auto" />
+                 <Image src={headerLogo} alt="BeachDude Vorschau" width={224} height={224} loading="eager" decoding="async" class="mx-auto" />
               </div>
             </div>
           </div>

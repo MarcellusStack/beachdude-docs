@@ -2,6 +2,7 @@
 // Base layout with shared head, header and footer
 import "../styles/global.css";
 import logo from "../assets/logo.png";
+import { Image } from "astro:assets";
 
 interface Props {
   title?: string;
@@ -17,13 +18,17 @@ const { title = "BeachDude", description = "BeachDude – Offline-KI-Assistent" 
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    </noscript>
   </head>
   <body class="min-h-dvh bg-white text-gray-900">
     <header class="sticky top-0 z-40 w-full border-b border-gray-200/70 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
         <a href="/" class="flex items-center gap-2">
-          <img src={logo.src} alt="BeachDude Logo" class="h-8 w-auto" />
+          <Image src={logo} alt="BeachDude Logo" width={32} height={32} class="h-8 w-auto" />
           <span class="font-semibold tracking-tight text-2xl text-[#002d55]">BeachDude</span>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
@@ -48,7 +53,6 @@ const { title = "BeachDude", description = "BeachDude – Offline-KI-Assistent" 
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
   </body>
 </html>
 
