@@ -29,18 +29,15 @@ const { title = "BeachDude", description = "BeachDude – Offline-KI-Assistent" 
     <meta name="twitter:description" content={description} />
     <meta property="og:locale" content="de_DE" />
     <link rel="alternate" hreflang="de-DE" href={new URL(Astro.url.pathname, Astro.site)} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#002d55" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-    </noscript>
-    <PostHog />
+  
+    <PostHog  />
   </head>
   <body class="min-h-dvh bg-white text-gray-900">
     <script type="application/ld+json">

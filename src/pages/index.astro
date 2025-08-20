@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import headerLogo from "../assets/header-logo.png";
 export const prerender = true
 import { Image } from "astro:assets";
+import {  IconLayoutDashboard, IconAccessPointOff, IconListDetails, IconWind, IconNetwork, IconUsersGroup, IconCertificate, IconTower, IconCalendarEvent, IconMail, IconListCheck, IconPackage, IconSchool, IconShieldLock, IconMessageChatbot, IconFile, IconFileImport, IconMap } from "@tabler/icons-react";
 ---
 
 <BaseLayout
@@ -41,126 +42,126 @@ import { Image } from "astro:assets";
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
 
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-access-point-off text-2xl text-[#002d55]"></i>
+                <IconAccessPointOff color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Offline-fähig</h3>
               <p class="mt-2 text-sm text-gray-700">Alle Funktionen sind offline verfügbar – genau dann, wenn du sie brauchst.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-layout-dashboard text-2xl text-[#002d55]"></i>
+                <IconLayoutDashboard color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Dashboard</h3>
               <p class="mt-2 text-sm text-gray-700">Übersicht aller Einsätze, Türme, Fahrzeuge und Booten sowie Rettungsschwimmer.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-list-details text-2xl text-[#002d55]"></i>
+                <IconListDetails color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Aufgabenmanagement</h3>
               <p class="mt-2 text-sm text-gray-700">Erstellen von Aufgaben für Rettungsschwimmer.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-wind text-2xl text-[#002d55]"></i>
+                <IconWind color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Wetterdaten</h3>
               <p class="mt-2 text-sm text-gray-700">Erstellen von Wetterdaten.</p>
             </div>
              <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-network text-2xl text-[#002d55]"></i>
+                <IconNetwork color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Echtzeit jederzeit</h3>
               <p class="mt-2 text-sm text-gray-700">Alle Funktionen aktualisieren sich in Echtzeit – ohne Wartezeiten somit können sie jeden Einsatz überprüfen sowie schauen welche Türme im Einsatz sind.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-users-group text-2xl text-[#002d55]"></i>
+                <IconUsersGroup color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Benutzermanagement</h3>
               <p class="mt-2 text-sm text-gray-700">Erstellen von Rettungsschwimmern sowie deren Daten.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-certificate text-2xl text-[#002d55]"></i>
+                <IconCertificate color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Zertifikate</h3>
               <p class="mt-2 text-sm text-gray-700">Erstellen von Zertifikaten für Rettungsschwimmer.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-tower text-2xl text-[#002d55]"></i>
+                <IconTower color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Erstellen von Türmen, Fahrzeugen oder Booten sowie eigene Einsatzarten</h3>
               <p class="mt-2 text-sm text-gray-700">Einsatzarten können individuell angepasst werden mit Koordinaten versehen werden und Rettungsschwimmer zugeordnet werden.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-calendar-event text-2xl text-[#002d55]"></i>
+                <IconCalendarEvent color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Saisonplanung & Wachplanung</h3>
               <p class="mt-2 text-sm text-gray-700">Planen Sie Ihre Saison und Wachplanung für jeden Tag ganz einfach und schnell.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-mail text-2xl text-[#002d55]"></i>
+                <IconMail color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">E-Mails Versenden</h3>
               <p class="mt-2 text-sm text-gray-700">E-Mails für die Kommunikation mit Rettungsschwimmern – z. B. für Saison-Einladungen – sowie nach Einsätzen zur Protokollierung an Patient:innen/Geholfene und vieles mehr.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-list-check text-2xl text-[#002d55]"></i>
+                <IconListCheck color="#002d55" size={24} />
               </div>
               <h3 class="font-semibold text-[#002d55]">Checklisten & Protokolle</h3>
               <p class="mt-2 text-sm text-gray-700">Von Erste-Hilfe sowie Such- und Gruppenanmeldung alles vorbereitet und falls etwas fehlt ist es möglich eigene Protokolle zu erstellen. Einsatzprotokolle können auch in Echtzeit erstellt werden.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-packages text-2xl text-[#002d55]"></i>
+                <IconPackage color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Geräte- und Lagerverwaltung</h3>
               <p class="mt-2 text-sm text-gray-700">Wichtige Infos für Ausrüstung und Lager immer griffbereit.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-school text-2xl text-[#002d55]"></i>
+                <IconSchool color="#002d55" size={24}  />
               </div>
               <h3 class="font-semibold text-[#002d55]">Schulung & Onboarding</h3>
               <p class="mt-2 text-sm text-gray-700">Neue Teammitglieder schneller einsatzbereit – mit klaren Leitfäden und Onboarding.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-shield-lock text-2xl text-[#002d55]"></i>
+                <IconShieldLock color="#002d55" size={24} />
               </div>
               <h3 class="m-0 font-semibold text-[#002d55]">Datenschutz</h3>
               <p class="m-0 text-sm text-gray-700">Lokale Verarbeitung - komplett ohne Cloud-Zwang, falls doch sind die Daten verschlüsselt.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-message-chatbot text-2xl text-[#002d55]"></i>
+                <IconMessageChatbot color="#002d55" size={24} />
               </div>
               <h3 class="font-semibold text-[#002d55]">Künstliche Intelligenz</h3>
               <p class="mt-2 text-sm text-gray-700">Wir nutzen KI, um euch die Arbeit zu erleichtern. Zum Beispiel bei der Saison- und Wachplanung sowie beim Verbessern von E-Mails und Einsatzprotokollen.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-file text-2xl text-[#002d55]"></i>
+                <IconFile color="#002d55" size={24} />
               </div>
               <h3 class="font-semibold text-[#002d55]">Abrechnung von Rettungsschwimmern</h3>
               <p class="mt-2 text-sm text-gray-700">Abrechnung für Rettungsschwimmer per CSV Export oder PDF.</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-file-import text-2xl text-[#002d55]"></i>
+                <IconFileImport color="#002d55" size={24} />
               </div>
               <h3 class="font-semibold text-[#002d55]">Import und Export von Daten</h3>
               <p class="mt-2 text-sm text-gray-700">Import und Export von Daten in CSV oder Excel z.B. von Rettungsschwimmern</p>
             </div>
             <div class="rounded-xl bg-[#f5f0e6] p-6 shadow-sm ring-1 ring-black/5 flex flex-col items-start gap-4">
               <div class="bg-accent-600/25 rounded-md p-2 flex items-center justify-center">
-                <i class="ti ti-map text-2xl text-[#002d55]"></i>
+                <IconMap color="#002d55" size={24} />
               </div>
               <h3 class="font-semibold text-[#002d55]">Karte</h3>
               <p class="mt-2 text-sm text-gray-700">Karte mit allen Türmen, Fahrzeugen und Booten sowie Rettungsschwimmern.</p>
