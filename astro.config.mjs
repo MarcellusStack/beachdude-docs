@@ -12,44 +12,56 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.beachdude.de",
-  integrations: [clerk({
-    localization: deDE,
-    appearance: {
-      elements: {
-        button: {
-          backgroundColor: "#002d55",
-          color: "#fff",
+  integrations: [
+    clerk({
+      localization: deDE,
+      appearance: {
+        elements: {
+          button: {
+            backgroundColor: "#002d55",
+            color: "#fff",
+          },
         },
       },
-    },
-  }), starlight({
-    title: "BeachDude",
-    customCss: [
-      // Path to your Tailwind base styles:
-      "./src/styles/global.css",
-    ],
-    social: [],
-    logo: {
-      light: "./src/assets/logo.png",
-      dark: "./src/assets/logo.png",
-    },
-    sidebar: [
-      {
-        label: "Guides",
-        items: [
-          // Each item here is one entry in the navigation menu.
-          { label: "Example Guide", slug: "docs/guides/example" },
-        ],
+    }),
+    starlight({
+      title: "BeachDude",
+      customCss: [
+        // Path to your Tailwind base styles:
+        "./src/styles/global.css",
+      ],
+      social: [],
+      logo: {
+        light: "./src/assets/logo.png",
+        dark: "./src/assets/logo.png",
       },
-      {
-        label: "Reference",
-        autogenerate: { directory: "docs/reference" },
-      },
-    ],
-  }), sitemap(), react()],
+      sidebar: [
+        {
+          label: "Guides",
+          items: [
+            // Each item here is one entry in the navigation menu.
+            { label: "Example Guide", slug: "docs/guides/example" },
+          ],
+        },
+        {
+          label: "Reference",
+          autogenerate: { directory: "docs/reference" },
+        },
+      ],
+    }),
+    sitemap(),
+    react(),
+  ],
 
   vite: {
     plugins: [tailwindcss()],
+    resolve: {
+      // Use react-dom/server.edge instead of react-dom/server.browser for React 19.
+      // Without this, MessageChannel from node:worker_threads needs to be polyfilled.
+      alias: import.meta.env.PROD && {
+        "react-dom/server": "react-dom/server.edge",
+      },
+    },
   },
   adapter: cloudflare({ imageService: "compile" }),
   output: "server",
